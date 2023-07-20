@@ -6,7 +6,7 @@ async function connectToDatabase() {
     const connection = await mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "password",
+      password: "david386047",
       database: "employee_db",
     });
     return connection.promise(); // to use Promises
@@ -15,3 +15,7 @@ async function connectToDatabase() {
     process.exit(1);
   }
 }
+
+module.exports = {
+  connectToDatabase,
+};

@@ -14,31 +14,31 @@ async function startApp() {
 
       switch (action) {
         case "View all Departments":
-          await viewDepartments();
+          await employee.viewDepartments(); // Corrected method call
           break;
 
         case "View all Employees":
-          await viewEmployees();
+          await employee.viewEmployees(); // Corrected method call
           break;
 
         case "View all Roles":
-          await viewRoles();
+          await employee.viewRoles(); // Corrected method call
           break;
 
         case "Add a Department":
-          await addDepartment();
+          await employee.addDepartment(); // Corrected method call
           break;
 
         case "Add a Role":
-          await addRole();
+          await employee.addRole(); // Corrected method call
           break;
 
         case "Add an Employee":
-          await addEmployee();
+          await employee.addEmployee(); // Corrected method call
           break;
 
         case "Update an Employee Role":
-          await updateEmployee();
+          await employee.updateEmployee(); // Corrected method call
           break;
 
         case "Exit":
@@ -63,17 +63,16 @@ async function showMainMenu() {
     type: "list",
     message: "What would you like to do?",
     choices: [
-      "View all employees",
-      "Add an employee",
-      "Update employee details",
-      "Add department",
-      "Add a Role",
-      "View all Roles",
       "View all Departments",
+      "View all Employees",
+      "View all Roles",
+      "Add a Department",
+      "Add a Role",
+      "Add an Employee",
+      "Update an Employee Role",
       "Exit",
     ],
   });
   return action;
 }
-
 startApp();
