@@ -129,7 +129,7 @@ async function addEmployee(connection) {
       },
     ]);
 
-    // Perform the SQL INSERT query to add the new employee to the database
+    //  the SQL INSERT query to add the new employee to the database
     const { firstName, lastName, roleId, managerId } = employeeData;
     await connection.query(
       "INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)",
@@ -159,7 +159,7 @@ async function updateEmployee(connection) {
       },
     ]);
 
-    // Perform the SQL UPDATE query to update the employee's role in the database
+    // the SQL UPDATE query to update the employee's role in the database
     const { employeeId, newRoleId } = employeeToUpdate;
     await connection.query("UPDATE employee SET role_id = ? WHERE id = ?", [
       newRoleId,

@@ -14,31 +14,31 @@ async function startApp() {
 
       switch (action) {
         case "View all Departments":
-          await employee.viewDepartments(); // Corrected method call
+          await employee.viewDepartments();
           break;
 
         case "View all Employees":
-          await employee.viewEmployees(); // Corrected method call
+          await employee.viewEmployees();
           break;
 
         case "View all Roles":
-          await employee.viewRoles(); // Corrected method call
+          await employee.viewRoles();
           break;
 
         case "Add a Department":
-          await employee.addDepartment(); // Corrected method call
+          await employee.addDepartment();
           break;
 
         case "Add a Role":
-          await employee.addRole(); // Corrected method call
+          await employee.addRole();
           break;
 
         case "Add an Employee":
-          await employee.addEmployee(); // Corrected method call
+          await employee.addEmployee();
           break;
 
         case "Update an Employee Role":
-          await employee.updateEmployee(); // Corrected method call
+          await employee.updateEmployee();
           break;
 
         case "Exit":
